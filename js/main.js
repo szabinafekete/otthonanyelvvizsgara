@@ -10,3 +10,11 @@ document.getElementById('facebook').addEventListener("mouseout", ()=>{
 console.log("ok")
 
 
+function zIndex(){
+    console.log("katt");
+    document.getElementById("zIndex").style.zIndex = "-1";
+    window.onclick = ()=> document.getElementById("zIndex").style.zIndex = "1";
+}
+    
+
+
