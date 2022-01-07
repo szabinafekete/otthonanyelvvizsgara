@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="../img/icon_german.png" type="image/png">
+    <title>Otthon a nyelvvizsgára - Német</title>
+    <style>
+        .nav-link, footer a, footer span{
+            color: rgba(255,255,255,.55);
+        }
+        .nav-link:hover, footer a:hover{
+            color: rgba(255,255,255,.75);
+        }
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+            background-color: rgba(255,193,7,.55);
+        }
+        .tab-pane p{
+            text-align: justify;
+        }
+        .nav-pills .nav-link{
+            border-radius: 0;
+            border-top: 1px solid rgba(255,255,255,.55);
+        }
+        button .nav-link:last-child{
+            border-bottom: 1px solid rgba(255,255,255,.55);
+        }
+
+        @media screen and (max-width: 768px){
+            #feladat img:last-child{
+                margin: 1rem auto 0 auto;
+            }
+        }
+        @media screen and (max-width: 576px){
+            #feladat img:nth-child(2){
+                margin-top: 1rem;
+            }
+        }
+        .card{
+            height: calc(100vh - 210px);
+            }
+        @media screen and (max-width: 1056px){
+        .card{
+            height: calc(100vh - 250px);
+            }
+        }   
+        @media screen and (max-width: 767px) {
+            .card{
+                height: calc(100vh - 210px); 
+            } 
+        }
+        @media screen and (max-width: 717px) {
+            .card{
+                height: calc(100vh - 225px); 
+            } 
+        }
+        @media screen and (max-width: 430px) {
+            .card{
+                height: calc(100vh - 245px); 
+            } 
+        }
+        @media screen and (max-width: 379px) {
+            .card{
+                height: calc(100vh - 285px); 
+            } 
+        }
+        @media screen and (max-width: 352px) {
+            .card{
+                height: calc(100vh - 310px); 
+            } 
+        }
+        @media screen and (max-width: 324px) {
+            .card{
+                height: calc(100vh - 335px); 
+            } 
+        }
+        @media screen and (max-width: 306px) {
+            .card{
+                height: calc(100vh - 355px); 
+            } 
+        }
+    </style>
+</head>
+<body class="d-flex flex-column justify-content-between min-vh-100"> 
+    
+    <!--nav-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md flex-wrap">
+        <div class="container-xxl">
+            <a class="navbar-brand text-uppercase" href="main.html">
+                <img src="../img/german.png" alt="" width="32" height="32" class="d-inline-block align-text-top">Otthon a nyelvvizsgára
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="leckek.html">Leckék</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Szóbeli vizsga
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Beszélgetés/ szerepjáték</a></li>
+                        <li><a class="dropdown-item" href="kepleiras.html">Képleírás</a></li>
+                        <li><a class="dropdown-item" href="velemeny.html">Véleménynyilvánítás</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="tetel.html">Kidolgozott tételek</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Írásbeli vizsga
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Olvasáskészség</a></li>
+                            <li><a class="dropdown-item" href="#">Beszédértés</a></li>
+                            <li><a class="dropdown-item" href="iras.html">Íráskészség</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Próba vizsga</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nyelvtan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Szószedet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Segédletek</a>
+                        </li>
+                </ul>
+               <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                   <li id="facebook" class="nav-item"><a class="nav-link" href="https://www.facebook.com/"><img id="change" src="../img/facebook.svg" alt=""></a></li>
+                   <li class="nav-item"><a class="nav-link" href="bejelentkezes.html">Kijelentkezés</a></li>
+               </ul>     
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--main-->
+    <main class="container-xxl py-4">
+        <div class="">
+            <h3 class="">Wortkarte / Szókártyák</h3>
+            <div class="col-12 card ">
+                <div class="fs-1 d-flex align-items-center justify-content-center card-body">
+                  This is some text within a card body.
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 1%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+              </div>
+            
+        </div>
+    </main>
+
+    <!--footer-->
+    <footer class="align-items-center flex-wrap bg-dark p-3">
+        <div class="d-flex justify-content-between container-xxl flex-md-row flex-sm-column text-sm-center px-0">
+            <span class="">&copy; 2022 | Minden jog fenntartva | Horváth-Fekete Szabina</span>
+            <a class="text-decoration-none" href="forras.html">Forrás jegyzék</a>
+            <a class="text-decoration-none" href="#">ÁSZF és Adatvédelem</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/words.js"></script>
+</body>
+</html>
+
