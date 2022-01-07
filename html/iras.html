@@ -20,9 +20,6 @@
         .tab-pane p{
             text-align: justify;
         }
-        .nav-pills{
-            z-index: -1;
-        }
         .nav-pills .nav-link{
             border-radius: 0;
             border-top: 1px solid rgba(255,255,255,.55);
@@ -66,10 +63,10 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a onclick="zIndex()" class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Szóbeli vizsga
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
                         <li><a class="dropdown-item" href="#">Beszélgetés/ szerepjáték</a></li>
                         <li><a class="dropdown-item" href="kepleiras.html">Képleírás</a></li>
                         <li><a class="dropdown-item" href="velemeny.html">Véleménynyilvánítás</a></li>
@@ -78,10 +75,10 @@
                     </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link  active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a onclick="zIndex()" class="nav-link  active dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Írásbeli vizsga
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
                             <li><a class="dropdown-item" href="#">Olvasáskészség</a></li>
                             <li><a class="dropdown-item" href="#">Beszédértés</a></li>
                             <li><a class="dropdown-item" href="iras.html">Íráskészség</a></li>
@@ -104,14 +101,13 @@
                    <li class="nav-item"><a class="nav-link" href="bejelentkezes.html">Kijelentkezés</a></li>
                </ul>     
             </div>
-            </div>
         </div>
     </nav>
 
     <!--main-->
     <main class="container-xxl p-0">
         <div class="d-flex flex-wrap align-items-start">
-            <div class="nav flex-column nav-pills bg-dark col-lg-3 col-md-3 col-sm-4 col-12 sticky-sm-top" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <div id="zIndex" class="nav flex-column nav-pills bg-dark col-lg-3 col-md-3 col-sm-4 col-12 sticky-sm-top" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <button class="nav-link active" id="forma-tab" data-bs-toggle="pill" data-bs-target="#forma" type="button" role="tab" aria-controls="forma" aria-selected="true">Levélírás formai követelményei</button>
                 <button class="nav-link" id="panasz-tab" data-bs-toggle="pill" data-bs-target="#panasz" type="button" role="tab" aria-controls="panasz" aria-selected="true">Panaszlevél</button>
                 <button class="nav-link" id="feladat1-tab" data-bs-toggle="pill" data-bs-target="#feladat1" type="button" role="tab" aria-controls="feladat1" aria-selected="true">1. feladat</button>
@@ -132,7 +128,7 @@
                 <button class="nav-link" id="feladat16-tab" data-bs-toggle="pill" data-bs-target="#feladat16" type="button" role="tab" aria-controls="feladat16" aria-selected="false">16. feladat</button>
                 <button class="nav-link" id="feladat17-tab" data-bs-toggle="pill" data-bs-target="#feladat17" type="button" role="tab" aria-controls="feladat17" aria-selected="false">17. feladat</button>
             </div>
-            <div class="tab-content p-4 col-lg-9 col-md-9 col-sm-8" id="v-pills-tabContent">
+            <div class="tab-content p-4 col-lg-9 col-md-9 col-sm-8 col-12" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="forma" role="tabpanel" aria-labelledby="forma">
                     <h3>Briefwechsel / Levelezés</h3>
                         <h4 class="p-2 bg-dark text-white">Die Struktur des Brief</h4>
@@ -171,7 +167,6 @@
                         </table>
                         <h4 class="p-2 bg-dark text-white">Privatbrief / Magánlevél</h4>
                         <h4 class="p-2 bg-dark text-white">Privatbrief / Hivatalos levél</h4>
-                        <h5></h5>
                 </div>
                 <div class="tab-pane fade" id="panasz" role="tabpanel" aria-labelledby="panasz-tab">
                     <div>
@@ -474,13 +469,12 @@
                 </div>
                     
                     <div class="mt-4">
+                        <div class="d-flex bg-dark align-items-center justify-content-between">
+                            <h4 class="m-0 p-2 text-white">Vokabular / Szószedet</h4>
+                            <a href="szoKartya.html" class="me-2 px-1 py-0 btn btn-outline-warning">Wortkarte / Szókártyák</a> 
+                        </div>
                         <table class="table table-striped">
                             <thead>
-                                <div class="d-flex bg-dark align-items-center justify-content-between">
-                                    <h4 class="m-0 p-2 text-white">Vokabular / Szószedet</h4>
-                                    <a href="szoKartya.html"><button class="me-2 px-1 py-0 btn btn-outline-warning">Wortkarte / Szókártyák</button></a> 
-                                </div>
-                                
                                 <tr>
                                     <th colspan="2" scope="col">Deutsch / Német</th>
                                     <th scope="col">Ungarisch / Magyar</th>
@@ -494,13 +488,26 @@
               <div class="tab-pane fade" id="feladat2" role="tabpanel" aria-labelledby="feladat2-tab">...</div>
               <div class="tab-pane fade" id="feladat3" role="tabpanel" aria-labelledby="feladat3-tab">...</div>
               <div class="tab-pane fade" id="feladat4" role="tabpanel" aria-labelledby="feladat4-tab">...</div>
+              <div class="tab-pane fade" id="feladat5" role="tabpanel" aria-labelledby="feladat5-tab">...</div>
+              <div class="tab-pane fade" id="feladat6" role="tabpanel" aria-labelledby="feladat6-tab">...</div>
+              <div class="tab-pane fade" id="feladat7" role="tabpanel" aria-labelledby="feladat7-tab">...</div>
+              <div class="tab-pane fade" id="feladat8" role="tabpanel" aria-labelledby="feladat8-tab">...</div>
+              <div class="tab-pane fade" id="feladat9" role="tabpanel" aria-labelledby="feladat9-tab">...</div>
+              <div class="tab-pane fade" id="feladat10" role="tabpanel" aria-labelledby="feladat10-tab">...</div>
+              <div class="tab-pane fade" id="feladat11" role="tabpanel" aria-labelledby="feladat11-tab">...</div>
+              <div class="tab-pane fade" id="feladat12" role="tabpanel" aria-labelledby="feladat12-tab">...</div>
+              <div class="tab-pane fade" id="feladat13" role="tabpanel" aria-labelledby="feladat13-tab">...</div>
+              <div class="tab-pane fade" id="feladat14" role="tabpanel" aria-labelledby="feladat14-tab">...</div>
+              <div class="tab-pane fade" id="feladat15" role="tabpanel" aria-labelledby="feladat15-tab">...</div>
+              <div class="tab-pane fade" id="feladat16" role="tabpanel" aria-labelledby="feladat16-tab">...</div>
+              <div class="tab-pane fade" id="feladat17" role="tabpanel" aria-labelledby="feladat17-tab">...</div>
             </div>
         </div>
     </main>
 
     <!--footer-->
     <footer class="align-items-center flex-wrap bg-dark p-3">
-        <div class="d-flex justify-content-between container-xxl flex-md-row flex-sm-column text-sm-center px-0">
+        <div class="d-flex justify-content-between container-xxl flex-md-row flex-column text-center px-0">
             <span class="">&copy; 2022 | Minden jog fenntartva | Horváth-Fekete Szabina</span>
             <a class="text-decoration-none" href="forras.html">Forrás jegyzék</a>
             <a class="text-decoration-none" href="#">ÁSZF és Adatvédelem</a>

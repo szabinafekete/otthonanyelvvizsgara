@@ -20,9 +20,6 @@
         .tab-pane p{
             text-align: justify;
         }
-        .nav-pills{
-            z-index: -1;
-        }
         .nav-pills .nav-link {
             border-radius: 0;
             border-top: 1px solid rgba(255,255,255,.55);  
@@ -61,10 +58,10 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a onclick="zIndex()" class="nav-link active dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Szóbeli vizsga
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
                         <li><a class="dropdown-item" href="#">Beszélgetés/ szerepjáték</a></li>
                         <li><a class="dropdown-item" href="kepleiras.html">Képleírás</a></li>
                         <li><a class="dropdown-item" href="velemeny.html">Véleménynyilvánítás</a></li>
@@ -73,10 +70,10 @@
                     </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a onclick="zIndex()" class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Írásbeli vizsga
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
                             <li><a class="dropdown-item" href="#">Olvasáskészség</a></li>
                             <li><a class="dropdown-item" href="#">Beszédértés</a></li>
                             <li><a class="dropdown-item" href="iras.html">Íráskészség</a></li>
@@ -99,14 +96,13 @@
                    <li class="nav-item"><a class="nav-link" href="bejelentkezes.html">Kijelentkezés</a></li>
                </ul>     
             </div>
-            </div>
         </div>
     </nav>
 
     <!--main-->
     <main class="container-xxl p-0">
         <div class="d-flex flex-wrap align-items-start">
-            <div class="nav flex-column nav-pills bg-dark col-lg-3 col-md-3 col-sm-4 col-12 sticky-sm-top" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <div id="zIndex" class="nav flex-column nav-pills bg-dark col-lg-3 col-md-3 col-sm-4 col-12 sticky-sm-top" id="v-pills-tab" role="tablist" aria-orientation="vertical">
               <button class="nav-link active" id="csalad-tab" data-bs-toggle="pill" data-bs-target="#csalad" type="button" role="tab" aria-controls="csalad" aria-selected="true">Én és a családom</button>
               <button class="nav-link" id="otthon-tab" data-bs-toggle="pill" data-bs-target="#otthon" type="button" role="tab" aria-controls="otthon" aria-selected="false">Az otthon és a szűkebb környezet</button>
               <button class="nav-link" id="munka-tab" data-bs-toggle="pill" data-bs-target="#munka" type="button" role="tab" aria-controls="munka" aria-selected="false">A munka világa, napi tevékenység</button>
@@ -123,29 +119,29 @@
               <button class="nav-link" id="szabadido-tab" data-bs-toggle="pill" data-bs-target="#szabadido" type="button" role="tab" aria-controls="szabadido" aria-selected="false">Szabadidő/hobbik és divat/öltözködés</button> 
               <button class="nav-link" id="magyaro-tab" data-bs-toggle="pill" data-bs-target="#magyaro" type="button" role="tab" aria-controls="magyaro" aria-selected="false">Magyarország és a célnyelvi országok</button>
             </div>
-            <div class="tab-content p-4 col-lg-9 col-md-9 col-sm-8" id="v-pills-tabContent">
+            <div class="tab-content p-4 col-lg-9 col-md-9 col-sm-8 col-12" id="v-pills-tabContent">
               <div class="d-inline-block tab-pane fade show active" id="csalad" role="tabpanel" aria-labelledby="csalad">
                 <h3>Familie 1</h3>  
                 <h4 class="p-2 bg-dark text-white">Vorstellung, persönliche Informationen </h4> 
   
                 <div class="mt-3 align-items-start">
                     <span class="col-lg-6 col-sm-12 col-12 float-start me-3">
-                    <img src="../img/family.jpg" class="img-fluid">
+                    <img src="../img/family.jpg" alt="család" class="img-fluid">
                     <audio class="w-100 mt-2" autoplay controls loop>
-                        <source src="mp3/familie.mp3" type="audio/mpeg">
+                        <source src="../mp3/familie.mp3" type="audio/mpeg">
                       A hanganyag nem érhető el.
                       </audio>
                     </span>
-                    <span class="">
-                        <p>  
-                            Mein Name ist Theo Müller, ich bin am 29. Oktober 1987 in Göttingen geboren. Ich war ein Jahr lang mit meiner Mutter zu Hause. Sie begann dann wieder zu arbeiten, deshalb bin ich in die Kinderkrippe in der Nähe unserer Wohnung gegangen. Mit 3 Jahren ging ich in den Kindergarten, den ich vier Jahre lang besucht habe. Die Kindergärtnerinnen waren sehr nett, ich hatte viele Freunde. so bin ich sehr gern in den Kindergarten gegangen. Als ich Fast 7 Jahre alt war, ging ich in die Grundschule, Am Anfang war es sehr schwer für mich, da ich niemanden in unserer Klasse kannte. In der Grundschule war ich ein sehr guter Schüler, ich hatte nur gute Noten in allen Fächern. Zweimal in der Woche hatte ich Fußballtraining und ich habe vier Jahre lang die Musikschule besucht, wo ich Gitarre spielen lernte. Nach der Grundschule habe ich das Goethegymnasium besucht, eine Spezialktasse mit erweitertem Matheunterricht, das heißt, dass wir jeden Tag Mathestunden hatten. Im Gymnasium habe ich zwei Fremdsprachen gelernt: Englisch und meine zweite Fremdsprache war Französisch. Wir hatten eine sehr gute Klassengemeinschaft. nachmittags und an den Wochenenden haben wir viel gemeinsam unternommen. wie Theater- oder Kinobesuche. Klassenausflüge. Spaziergänge und Feten. Ich hatte viele gute Freunde und die Lehrer waren auch in Ordnung, ein bisschen streng. aber hilfsbereit und gut ausgebildet. In der Mittelschule war ich ein sehr guter Schüler, deshalb habe ich die Entscheidung getroffen, mich um einen Studienplatz an der Technischen Universität in Stuttgart zu bewerben, Ich musste dazu eine Aufnahmeprüfung in Mathematik und Physik ablegen. Ich wurde aufgenommen und habe an der Universität 5 Jahre lang studiert. Ich habe Architektur studiert, ich habe mein Diplom vor zwei Monaten erworben. Zurzeit bin ich Freiberufler, Ich kann Auto fahren, seit drei Jahren habe ich einen Führerschein. Ich habe sehr gute Computerkenntnisse. 
-                        </p>
-                    </span>
+
+                    <p>  
+                        Mein Name ist Theo Müller, ich bin am 29. Oktober 1987 in Göttingen geboren. Ich war ein Jahr lang mit meiner Mutter zu Hause. Sie begann dann wieder zu arbeiten, deshalb bin ich in die Kinderkrippe in der Nähe unserer Wohnung gegangen. Mit 3 Jahren ging ich in den Kindergarten, den ich vier Jahre lang besucht habe. Die Kindergärtnerinnen waren sehr nett, ich hatte viele Freunde. so bin ich sehr gern in den Kindergarten gegangen. Als ich Fast 7 Jahre alt war, ging ich in die Grundschule, Am Anfang war es sehr schwer für mich, da ich niemanden in unserer Klasse kannte. In der Grundschule war ich ein sehr guter Schüler, ich hatte nur gute Noten in allen Fächern. Zweimal in der Woche hatte ich Fußballtraining und ich habe vier Jahre lang die Musikschule besucht, wo ich Gitarre spielen lernte. Nach der Grundschule habe ich das Goethegymnasium besucht, eine Spezialktasse mit erweitertem Matheunterricht, das heißt, dass wir jeden Tag Mathestunden hatten. Im Gymnasium habe ich zwei Fremdsprachen gelernt: Englisch und meine zweite Fremdsprache war Französisch. Wir hatten eine sehr gute Klassengemeinschaft. nachmittags und an den Wochenenden haben wir viel gemeinsam unternommen. wie Theater- oder Kinobesuche. Klassenausflüge. Spaziergänge und Feten. Ich hatte viele gute Freunde und die Lehrer waren auch in Ordnung, ein bisschen streng. aber hilfsbereit und gut ausgebildet. In der Mittelschule war ich ein sehr guter Schüler, deshalb habe ich die Entscheidung getroffen, mich um einen Studienplatz an der Technischen Universität in Stuttgart zu bewerben, Ich musste dazu eine Aufnahmeprüfung in Mathematik und Physik ablegen. Ich wurde aufgenommen und habe an der Universität 5 Jahre lang studiert. Ich habe Architektur studiert, ich habe mein Diplom vor zwei Monaten erworben. Zurzeit bin ich Freiberufler, Ich kann Auto fahren, seit drei Jahren habe ich einen Führerschein. Ich habe sehr gute Computerkenntnisse. 
+                    </p>
+
                 </div>
                 <!--<div><span class="span">
                     <img src="../img/family.jpg" class="img-fluid w-100">
                     <audio class="w-100 mt-2" autoplay controls loop>
-                        <source src="mp3/familie.mp3" type="audio/mpeg">
+                        <source src="../mp3/familie.mp3" type="audio/mpeg">
                       A hanganyag nem érhető el.
                       </audio>
                     </span>
@@ -154,13 +150,12 @@
                 </div>-->
                 
                 
-                
+                <div class="d-flex bg-dark align-items-center justify-content-between">
+                    <h4 class="m-0 p-2 text-white">Vokabular / Szószedet</h4>
+                    <a href="szoKartya.html" class="me-2 px-1 py-0 btn btn-outline-warning">Wortkarte / Szókártyák</a> 
+                </div>
                   <table class="table table-striped">
                       <thead>
-                        <div class="d-flex bg-dark align-items-center justify-content-between">
-                            <h4 class="m-0 p-2 text-white">Vokabular / Szószedet</h4>
-                            <a href="szoKartya.html"><button class="me-2 px-1 py-0 btn btn-outline-warning">Wortkarte / Szókártyák</button></a> 
-                        </div>
                          <tr>
                           <th scope="col">Deutsch / Német</th>
                           <th scope="col">Ungarisch / Magyar</th>
@@ -203,7 +198,7 @@
 
     <!--footer-->
     <footer class="align-items-center flex-wrap bg-dark p-3">
-        <div class="d-flex justify-content-between container-xxl flex-md-row flex-sm-column text-sm-center px-0">
+        <div class="d-flex justify-content-between container-xxl flex-md-row flex-column text-center px-0">
             <span class="">&copy; 2022 | Minden jog fenntartva | Horváth-Fekete Szabina</span>
             <a class="text-decoration-none" href="forras.html">Forrás jegyzék</a>
             <a class="text-decoration-none" href="#">ÁSZF és Adatvédelem</a>
