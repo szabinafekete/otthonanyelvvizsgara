@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="../img/icon_german.png" type="image/png">
+    <title>Otthon a nyelvvizsgára - Német</title>
+    <style>
+        .nav-link, footer a, footer span{
+            color: rgba(255,255,255,.55);
+        }
+        .nav-link:hover, footer a:hover{
+            color: rgba(255,255,255,.75);
+        }
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+            background-color: rgba(255,193,7,.55);
+        }
+        .tab-pane p{
+            text-align: justify;
+        }
+        .nav-pills .nav-link{
+            border-radius: 0;
+            border-top: 1px solid rgba(255,255,255,.55);
+        }
+        button .nav-link:last-child{
+            border-bottom: 1px solid rgba(255,255,255,.55);
+        }
+        .footer{
+            position: fixed;
+            bottom: 0;
+        }
+        @media screen and (max-width: 768px){
+            #feladat img:last-child{
+                margin: 1rem auto 0 auto;
+            }
+        }
+        @media screen and (max-width: 576px){
+            #feladat img:nth-child(2){
+                margin-top: 1rem;
+            }
+        }
+        .overflow{
+            overflow-x: auto;
+            /*max-width: 100vw;*/
+        }
+        .ratio {
+            max-height: 400px;
+        }
+        
+        /*@media screen and (min-width: 576px) {
+            .tetelek {
+               flex-wrap: no-wrap; 
+            } 
+        }*/
+    </style>
+</head>
+<body class="d-flex flex-column justify-content-between min-vh-100">    
+    
+    <!--nav-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md flex-wrap">
+        <div class="container-xxl">
+            <a class="navbar-brand text-uppercase" href="../index.html">
+                <img src="../img/german.png" alt="" width="32" height="32" class="d-inline-block align-text-top">Otthon a nyelvvizsgára
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="leckek.html">Leckék</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Szóbeli vizsga
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Beszélgetés/ szerepjáték</a></li>
+                        <li><a class="dropdown-item" href="kepleiras.html">Képleírás</a></li>
+                        <li><a class="dropdown-item" href="velemeny.html">Véleménynyilvánítás</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="tetel.html">Kidolgozott tételek</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Írásbeli vizsga
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <li><a class="dropdown-item" href="#">Olvasáskészség</a></li>
+                            <li><a class="dropdown-item" href="#">Beszédértés</a></li>
+                            <li><a class="dropdown-item" href="iras.html">Íráskészség</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Próba vizsga</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nyelvtan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Szószedet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Segédletek</a>
+                        </li>
+                </ul>
+               <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                   <li id="facebook" class="nav-item"><a class="nav-link" href="https://www.facebook.com/"><img id="change" src="../img/facebook.svg" alt=""></a></li>
+                   <li class="nav-item"><a class="nav-link" href="bejelentkezes.html">Kijelentkezés</a></li>
+               </ul>     
+            </div>
+        </div>
+    </nav>
+
+    <!--main-->
+    <main class="container-xxl py-4">
+        <div class="">
+            <div>
+                <h3>Bildbeschreibung / Képleírás</h3>
+                <h4 class="p-2 bg-dark text-white">Was sollte die Bildbeschreibung enthalten?</h4>
+                <h5>Mit kell tartalmaznia a képleírásnak?</h5>
+                <div class="overflow">
+                    <table class="table table-striped">
+                        <tr>
+                            <td>1.</td>
+                            <td>begründen Sie, warum Sie sich für dieses Bild entschieden haben,</td>
+                            <td class="col-5">Indokolja meg, hogy miért a választott kép mellett döntött!</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>beschreiben Sie das Bild und </td>
+                            <td class="col-5">Írja le a képet! Mit lát rajta?</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>gehen Sie dann auf das Thema des Bildes ein: Was ist das Thema? Was sagt das Bild aus? Äußern Sie Ihre Meinung und stellen Sie Vermutungen an.</td>
+                            <td class="col-5">Folytassa a kép témájával! Mi a téma? Mit mond a kép? Mondja el véleményét és tegyen feltételezéseket.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <h5>1. Begründung der Wahl / Választás indoklása</h5>
+                <div class="overflow">
+                    <table class="table table-striped">
+                        <tr>
+                            <td colspan="2" class="">Ich habe mich für dieses Bild entscheiden, weil… (KATI)</td>
+                            <td class="col-5">Azért választottam ezt a képet, mert...</td>
+                        </tr>
+                        <tr>
+                            <td class="col-3">Auf dem Bild…</td>
+                            <td class="col-4">kann man einen Mann sehen, der… (KATI)<br>
+                                kann man ein Mann gesehen werden, der… (KATI)<br>
+                                ist ein Mann zu sehen, der… (KATI)
+                            </td>
+                            <td class="col-5">A képen egy férfi látható, aki... </td>
+                        </tr>
+                    </table>
+                </div>
+                <h5>2. Bildbeschreibung / Képleírás</h5>
+                <div class="overflow">
+                    <table class="table table-striped">
+                        <tr>
+                            <td class="col-3">
+                                Im Hintergrund...<br>
+                                Im Vordergrund...<br>
+                                In der Mitte...<br>
+                                Auf der linken/ rechten Seite...
+                            </td>
+                            <td class="col-4">
+                                sieht man...<br>
+                                befindet sich...<br>
+                                kann mann ... sehen.</td>
+                            <td class="col-5">
+                                A háttérben látható...<br>
+                                Az előtérben található...<br>
+                                Középen látható...<br>
+                                Bal/ jobb oldalt látható...
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="">Im Fokus des Bildes steht…</td>
+                            <td class="col-4">A kép középponjában a/az ... áll.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="">
+                                Außerdem<br>
+                                Des Weiteren sehe ich…</td>
+                            <td class="col-5">
+                                Ezen kívül<br>
+                                Továbbá látok...
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="">
+                                Das Bild wurde wahrscheinlich (im Wohnzimmer) gemacht.</td>
+                            <td class="col-5">A kép valószínűleg (a nappaliban) készült.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="">
+                                Das Bild wurde vermutlich (im Frühling) gemacht.</td>
+                            <td class="col-5">A kép valószínűleg (tavasszal) készült.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="">
+                                Er scheint (froh) zu sein.</td>
+                            <td class="col-5">(Boldognak) tűnik.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <h5>3. Thema / Téma</h5>
+                <div class="overflow">
+                    <table class="table table-striped">
+                        <tr>
+                            <td colspan="2">Auf dem Bild geht es um das Thema…</td>
+                            <td class="col-5">A kép a/az ... témáról szól. </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Ich fühle mich von diesem Thema betroffen, weil… (KATI)</td>
+                            <td class="col-5">Érintettnek érzem magam e témában, mert...</td>
+                        </tr>
+                    </table>
+                </div>
+                <h5>3+1 Abschluß / Befejezés</h5>
+                <div class="overflow">
+                    <table class="table table-striped">
+                        <tr>
+                            <td colspan="2">Ich möchte so viel zu diesem Bild sagen.</td>
+                            <td class="col-5">Ennyit szeretnék mondani erről a képről.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="ratio ratio-4x3">
+                <iframe src="https://www.youtube.com/embed/H5CPTsQoH98" title="YouTube video" allowfullscreen></iframe>
+            </div>
+            <div class="mt-4" id="feladat">
+                <h4 class="p-2 bg-dark text-white">Aufgabe / Feladat</h4>
+                <h5>Machen Sie eine Bildbeschreibung der Bilder unten! / Készítsen leírást az alábbi képekről!</h5>
+                <div id="pic" class="row">
+                    <!--
+                    <img src="https://picsum.photos/500/300?random=10" alt="random kép" class="img-fluid col-12 col-sm-6 col-md-4">
+                    <img src="https://picsum.photos/500/300?random=11" alt="random kép" class="img-fluid col-12 col-sm-6 col-md-4">
+                    <img src="https://picsum.photos/500/300?random=15" alt="random kép" class="img-fluid col-12 col-sm-6 col-md-4">
+                    -->
+                    
+                </div>
+
+            </div>
+            <div class="mt-4">
+                <div class="d-flex bg-dark align-items-center justify-content-between gap-2">
+                    <h4 class="m-0 p-2 text-white">Vokabular / Szószedet</h4>
+                    <a href="szoKartya.html" class="me-2 px-1 py-0 btn btn-outline-warning">Wortkarte / Szókártyák</a> 
+                </div>
+                <div class="overflow">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th colspan="2" scope="col">Deutsch / Német</th>
+                                <th scope="col">Ungarisch / Magyar</th>
+                            </tr>
+                        </thead>
+                        <tbody id="words"></tbody>
+                    </table>
+                </div>
+
+            </div>
+            
+        </div>
+    </main>
+
+    <!--footer-->
+    <footer class="align-items-center flex-wrap bg-dark p-3">
+        <div class="d-flex justify-content-between container-xxl flex-md-row flex-column text-center px-0">
+            <span class="">&copy; 2022 | Minden jog fenntartva | Horváth-Fekete Szabina</span>
+            <a class="text-decoration-none" href="forras.html">Forrás jegyzék</a>
+            <a class="text-decoration-none" href="#">ÁSZF és Adatvédelem</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/words.js"></script>
+    <script src="../js/pic.js"></script>
+    <script>
+        document.getElementById('words').innerHTML = words.filter(o => o.theme === "bildbeschreibung").map(o=>`<tr><td>${o.de}<td>${o.other}</td></td><td>${o.hu}</td></tr>`).join('');
+    </script>
+</body>
+</html>
+

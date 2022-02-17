@@ -1,6 +1,5 @@
 
 
-
 document.getElementById('facebook').addEventListener("mouseover", ()=>{
     document.getElementById('change').src = "../img/facebook2.svg";
 })
@@ -16,5 +15,4 @@ function zIndex(){
     window.onclick = ()=> document.getElementById("zIndex").style.zIndex = "1";
 }
     
-
 

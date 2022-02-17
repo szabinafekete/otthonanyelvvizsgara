@@ -1,4 +1,5 @@
 const words=[
+    //bildbeschreibung
     { "theme":"bildbeschreibung",
     "de":"begründen",
     "hu":"indokol",
@@ -104,5 +105,19 @@ const words=[
     "hu":"köze van hozzá, érintett (valami által)",
     "other":"z.B. von diesem Thema"
     }, 
-    ]
-    document.getElementById('words').innerHTML = words.map(o=>`<tr><td>${o.de}<td>${o.other}</td></td><td>${o.hu}</td></tr>`).join('')
+
+    //beschwerdebrief
+    { "theme":"beschwerdebrief",
+    "de":"die Beschwerde", 
+    "hu":"panasz",
+    "other":"Pl. Beschwerden"
+    }, 
+    { "theme":"beschwerdebrief",
+    "de":"der Vorfall", 
+    "hu":"eset",
+    "other":"Pl. Vorfälle"
+    }, 
+]
+
+
+       

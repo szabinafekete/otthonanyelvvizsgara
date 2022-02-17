@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="../img/icon_german.png" type="image/png">
+    <title>Otthon a nyelvvizsgára - Német</title>
+    <style>
+        .nav-link, footer a, footer span{
+            color: rgba(255,255,255,.55);
+        }
+        .nav-link:hover, footer a:hover{
+            color: rgba(255,255,255,.75);
+        }
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+            background-color: rgba(255,193,7,.55);
+        }
+        .tab-pane p{
+            text-align: justify;
+        }
+        .nav-pills .nav-link{
+            border-radius: 0;
+            border-top: 1px solid rgba(255,255,255,.55);
+        }
+        button .nav-link:last-child{
+            border-bottom: 1px solid rgba(255,255,255,.55);
+        }
+        .footer{
+            position: fixed;
+            bottom: 0;
+        }
+        @media screen and (max-width: 768px){
+            #feladat img:last-child{
+                margin: 1rem auto 0 auto;
+            }
+        }
+        @media screen and (max-width: 576px){
+            #feladat img:nth-child(2){
+                margin-top: 1rem;
+            }
+        }
+        .overflow{
+            overflow-x: auto;
+            /*max-width: 100vw;*/
+        }
+        .ratio {
+            max-height: 400px;
+        }
+        /*@media screen and (min-width: 576px) {
+            .tetelek {
+               flex-wrap: no-wrap; 
+            } 
+        }*/
+    </style>
+</head>
+<body class="d-flex flex-column justify-content-between min-vh-100">    
+    
+    <!--nav-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md flex-wrap">
+        <div class="container-xxl">
+            <a class="navbar-brand text-uppercase" href="../index.html">
+                <img src="../img/german.png" alt="" width="32" height="32" class="d-inline-block align-text-top">Otthon a nyelvvizsgára
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="leckek.html">Leckék</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Szóbeli vizsga
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Beszélgetés/ szerepjáték</a></li>
+                        <li><a class="dropdown-item" href="kepleiras.html">Képleírás</a></li>
+                        <li><a class="dropdown-item" href="velemeny.html">Véleménynyilvánítás</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="tetel.html">Kidolgozott tételek</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Írásbeli vizsga
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <li><a class="dropdown-item" href="#">Olvasáskészség</a></li>
+                            <li><a class="dropdown-item" href="#">Beszédértés</a></li>
+                            <li><a class="dropdown-item" href="iras.html">Íráskészség</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Próba vizsga</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nyelvtan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Szószedet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Segédletek</a>
+                        </li>
+                </ul>
+               <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                   <li id="facebook" class="nav-item"><a class="nav-link" href="https://www.facebook.com/"><img id="change" src="../img/facebook.svg" alt=""></a></li>
+                   <li class="nav-item"><a class="nav-link" href="bejelentkezes.html">Kijelentkezés</a></li>
+               </ul>     
+            </div>
+        </div>
+    </nav>
+
+    <!--main-->
+    <main class="container-xxl py-4">
+        <div class="">
+            <div>
+                <h3>Meinungsaustausch / Véleménykifejtés</h3>
+                <h4 class="p-2 bg-dark text-white">Redemittel zum
+                    Meinungsaustasch</h4>
+                <h5>Kifejezések a véleménynyilvánításhoz</h5>
+            </div>
+            <div class="mt-3">
+                <h5>1. Etwas wissen, in etwas sicher sein / Valamit tudni, biztosnak lenni benne </h5>
+                <div class="overflow">
+                    <table class="table table-striped">
+                        <tr>
+                           <td class="col-6">Ich bin absolut sicher, dass... (KATI)</td>
+                           <td class="col-6">Teljesen biztos vagyok benne, hogy...</td>
+                        </tr>
+                        <tr>
+                            <td class="col-6">Ich habe keine Zweifel, dass... (KATI)</td>
+                           <td class="col-6">Nincs kétségem afelől, hogy...</td>
+                        </tr>
+                        <tr>
+                            <td class="col-6">Selbstverständlich.</td>
+                            <td class="col-6">Természetesen.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-6"> Sicherlich.</td>
+                            <td class="col-6">Biztosan.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-6">Ganz eindeutig.</td>
+                            <td class="col-6">Teljesen egyértelmű.</td>
+                        </tr>
+                    </table>
+                </div>
+                <h5>2. Etwas nicht wissen / Nem tudni valamit </h5>
+                <div class="overflow">
+                    <table class="table table-striped">
+                        <tr>
+                            <td class="col-6">Entschuldigung, darüber weiß ich leider nicht viel.</td>
+                            <td class="col-6">Bocsánat, nem sokat tudok róla.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-6">Es tut mir Leid, da kann ich Ihnen nicht weiterhelfen.</td>
+                            <td class="col-6">Sajnálom, nem tudok segíteni.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-6">Entschuldigung, das weiß ich leider nicht.</td>
+                            <td class="col-6">Elnézést, de sajnos nem tudom.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-6">Keine Ahnung.</td>
+                            <td class="col-6">Fogalmam sincs.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-6">Wenn ich das nur wüsste!</td>
+                            <td class="col-6">Ha tudnám!</td>
+                        </tr>
+                    </table>
+                </div>
+                <h5>3. Um Rat bitten / Tanácsot kér </h5>
+                <div class="overflow">
+                    <table class="table table-striped">
+                        <tr>
+                            <td class="col-6">Ich brauche deinen/ Ihren Rat, es geht um... (+A) </td>
+                            <td class="col-6">Szükségem van a tanácsodra/ tanácsára, ... -ről van szó.</td>
+                        </tr>
+                        <tr>
+                            <td class="col-6">Könnten Sie mir einen Ratschlag geben? </td>
+                            <td class="col-6">Tudna tanácsot adni?</td>
+                        </tr>
+                        <tr>
+                            <td class="col-6">Was würden Sie an meiner Stelle tun? </td>
+                            <td class="col-6">Mit tenne a helyemben?</td>
+                        </tr>
+                        <tr>
+                            <td class="col-6">Denkst du ich sollte... ?</td>
+                            <td class="col-6">Szerinted kéne... ?</td>
+                        </tr>
+                        <tr>
+                            <td class="col-6">Was meinst du, was soll ich machen?</td>
+                            <td class="col-6">Mit gondolsz, mit kéne tennem?</td>
+                        </tr>
+                        <tr>
+                            <td class="col-6">Könnte ich Sie um einen Rat bitten?</td>
+                            <td class="col-6">Kérhetnék tanácsot Öntől?</td>
+                        </tr>
+                        <tr>
+                            <td class="col-6">Was würden Sie vorschlagen?</td>
+                            <td class="col-6">Mit javasolna?</td>
+                        </tr>
+                    </table>
+                    <a href="https://dein-sprachcoach.de/redemittel-zum-meinung-aussern/">Meinung äußern</a>
+                </div>
+               
+            </div>
+            <div class="ratio ratio-4x3 mb-3">
+                <iframe src="https://www.youtube.com/embed/PJQGfpXbMVI" title="YouTube video player" allowfullscreen></iframe>
+            </div>
+            <div class="ratio ratio-16x9 mb-3">
+                <iframe src="https://www.youtube.com/embed/m9N-q74a5iE" title="YouTube video player" allowfullscreen></iframe>
+            </div>
+            
+            <div class="mt-4" id="feladat">
+                <h4 class="p-2 bg-dark text-white">Aufgabe / Feladat</h4>
+                <p>Situati on: Sie und Ihre Gesprächspartnerin/Ihr Gesprächspartner haben folgende Stellungnahmen zum Thema
+                    „Sonntags einkaufen – ja oder nein?“ gelesen und sollen nun darüber diskuti eren.
+                    Sie sollen sich in die Rolle von Person 1 versetzen und deren Standpunkt vertreten. Bringen Sie weitere Aspekte
+                    und Argumente in das Gespräch ein.</p>
+                <div class="d-flex flex-wrap">
+                    <div class="col-md-6 col-sm-12 p-3 border border-2 rounded">
+                        <h4>Person 1</h4>
+                        <hr>
+                        <p class="m-0">„Wenn ich am Sonntag einkaufen
+                            gehen könnte, das wäre für mich schon
+                            eine Erleichterung. Ich habe sehr
+                            unregelmäßige Arbeitszeiten, sehr oft auch
+                            am Samstag. Wenn ich daher am Sonntag
+                            meinen Einkauf erledigen könnte, wäre
+                            es während der Woche nicht so stressig.
+                            Viele Konsumenten weichen ja aus diesem
+                            Grund auf Onlinehändler aus. Das will
+                            ich nicht. Natürlich verstehe ich auch die
+                            Angestellten in den Geschäft en, die ihre
+                            Freizeit brauchen, aber es gibt doch so viele
+                            Studenten, die sich über einen kleinen Job
+                            freuen würden.“</p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 p-3 border border-2 rounded">
+                        <h4>Person 2</h4>
+                        <hr>
+                        <p class="m-0">„Ehrlich gesagt ist mir völlig unklar, warum
+                            man am Sonntag einkaufen gehen soll. Die
+                            meisten Geschäft e haben während der
+                            Woche ohnehin bis spät am Abend off en!
+                            Ich fi nde, dass das völlig ausreicht. Für
+                            mich ist der Sonntag ein Tag, der sich von
+                            den anderen unterscheiden soll. Da soll
+                            man eben nicht hekti sch Erledigungen und
+                            Einkäufe machen, sondern auch einmal
+                            Zeit für anderes haben. Überhaupt ist es
+                            bedenklich, wenn dem Einkaufen so viel
+                            Bedeutung zukommt und Shoppen als
+                            Hobby betrachtet wird.“</p>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="mt-4">
+                <div class="d-flex bg-dark align-items-center justify-content-between gap-2">
+                    <h4 class="m-0 p-2 text-white">Vokabular / Szószedet</h4>
+                    <a href="szoKartya.html" class="me-2 px-1 py-0 btn btn-outline-warning">Wortkarte / Szókártyák</a> 
+                </div>
+                <div class="overflow">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th colspan="2" scope="col">Deutsch / Német</th>
+                                <th scope="col">Ungarisch / Magyar</th>
+                            </tr>
+                        </thead>
+                        <tbody id="words"></tbody>
+                    </table>
+                </div>
+
+            </div>
+            
+        </div>
+    </main>
+
+    <!--footer-->
+    <footer class="align-items-center flex-wrap bg-dark p-3">
+        <div class="d-flex justify-content-between container-xxl flex-md-row flex-column text-center px-0">
+            <span class="">&copy; 2022 | Minden jog fenntartva | Horváth-Fekete Szabina</span>
+            <a class="text-decoration-none" href="forras.html">Forrás jegyzék</a>
+            <a class="text-decoration-none" href="#">ÁSZF és Adatvédelem</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/words.js"></script>
+    <script src="../js/pic.js"></script>
+</body>
+</html>
+
